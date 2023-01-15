@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tugas Pak Imron</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+    background-image: url("star.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: aliceblue;
+}
+.wave{
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: rgb(255, 255, 255);
+    -webkit-box-reflect: below-20px linear-gradient(transparent,rgba(0,0,0,3));
+}
+.wave span{
+    font-family: Georgia;
+    font-style: italic;
+    display: inline-block;
+    animation: wave-anim 1s infinite;
+    animation-delay: calc(0.1s * var(--item));
+}
+@keyframes wave-anim{
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Style the header */
+header {
+  background-color: rgb(22, 123, 255);
+  opacity: 80%;
+  padding: 3px;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(219, 219, 219);
+}
+
+
+thead{
+  text-align: center;
+  float: center;
+}
+table{
+    border-radius: 5px;
+    border-color: rgb(144, 138, 199);
+    float: center;
+    margin-left: 150px;
+    max-width: max-content;
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: rgb(5, 21, 255);
+  opacity: 90%;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+a:link, a:visited {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px 20px;
+  margin: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: rgb(253, 59, 59);
+}
+li{
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+img{
+    border-radius: 10%;
+    box-shadow: 4px 5px 4px rgb(36, 36, 36);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 500px; /* only for demonstration, should be removed */
+}
+img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 2px 3px 5px black;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: blue;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color:white;
+}
+h1{
+font-family: georgia;}
+p{
+  font-family: georgia;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }}
+</style>
+</head>
+<body>
+<h1>Profil Mahasiswa</h1>
+<p>Jangan pernah berpura-pura dengan menjadi orang lain
+     untuk menutupi kekurangan yang dimiliki. 
+     Untuk menjadi diri sendiri, kamu harus bisa menerima
+    apapun yang ada dalam diri, baik itu bagus atau maupun buruk.
+    Seperti halnya bentuk fisik, cara bicara, potensi, kelemahan dan sebagainya.
+    Akan tetapi, menerima diri sendiri bukan berarti tidak
+    mau belajar untuk lebih baik. Tentunya, setiap kekurangan yang
+    ada pada diri harus diperbaiki dengan belajar 
+    untuk menjadi lebih baik lagi nantinya.</p>
+
+<header>
+    <div class="wave">
+        <span style="--item:1">A</span>
+        <span style="--item:2">b</span>
+        <span style="--item:3">o</span>
+        <span style="--item:4">u</span>
+        <span style="--item:5">t</span>
+        <span style="--item:6"> </span>
+        <span style="--item:7"> </span>
+        <span style="--item:8">M</span>
+        <span style="--item:9">e</span>
+        <span style="--item:10"> </span>
+        <span style="--item:11"> </span>
+        <span style="--item:12">:)</span>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="C:/xampp/htdocs/Tugas%20Pak%20Imron/Index.html">Home</a></li>
+      <li><a href="C:/xampp/htdocs/Tugas%20Pak%20Imron/Profile.html">Profile</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <p>Hi, Saya seorang Mahasiswa dari Jawa Timur 
+        di Universitas Yudharta Pasuruan, Prodi Teknik Informatika,
+         dan saya salah satu TIM bisnis di Kuliner Pak Bondan 
+         yang berlokasi di Mojokerto.
+    </p>
+</body>
+<body>
+    <img src="Mistya.jpg"/>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Biodata</th>
+                    <th>Pendidikan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    <ul>
+                    <li>Nama : Mistia Wati</li>
+                    <li>TTL : Tabalong, 16 Desember 2002</li>
+                    <li>Agama : Islam</li>
+                    <li>Alamat : Jaro-Tabalong-Kalimantan Selatan</li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                    <li>SD : SDN 3 JARO</li>
+                    <li>SMP/MTS : MTSN 6 Tabalong</li>
+                    <li>SMA/SMK : SMKN 1 Jaro (Agribisnis Ternak Ruminansia) & <br> IBS Al-Madaniyyah Jaro</li>
+                    <li>S1 : Universitas Yudharta Pasuruan (Teknik Informatika)</li>
+                    </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </article>
+</section>
+<footer>
+  <p>Mistyaaa</p>
+</footer>
